@@ -1,0 +1,56 @@
+<!-- Ejercicio 4
+Uso de formularios. Enunciado:
+Crea una página web que contenga un formulario -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro - Mi web</title>
+</head>
+
+<body>
+
+    <h1>Formulario de registro</h1>
+
+    <form action="#" method="get">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombreUsuario" maxlength="50" value="">
+        <br><br>
+        <label for="apellido">Apellidos:</label>
+        <input type="text" id="apellido" name="apellidoUsuario" maxlength="50" value="">
+        <br><br>
+        <label for="genero">Sexo:</label>
+        <input type="radio" id="genero" name="generoUsuario">hombre
+        <input type="radio" id="genero" name="generoUsuario">mujer
+        <br><br>
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="emailUsuario" value="">
+        <br><br>
+        <label for="poblacion">Población:</label>
+        <select id="poblacion">
+            <option id="">Selecciona una opcion</option>
+            <option id="bucaramanga">Bucaramanga</option>
+            <option id="floridablanca">Floridablanca</option>
+            <option id="giron">Girón</option>
+            <option id="piedecuesta">Piedecuesta</option>
+        </select>
+        <br><br>
+        <label for="descripcion">Descripción</label><br>
+        <textarea name="descripcionUsuario" id="descripcion" cols="60" rows="5"></textarea>
+        <br><br>
+        <input type="checkbox" id="checkboxNotificacion" checked>
+        <label for="checkboxNotificacion">Deseo recibir informacion sobre novedades y ofertas</label>
+        <br><br>
+        <input type="checkbox" id="checkboxCondiciones">
+        <label for="checkboxCondiciones">Declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre protección de datos</label>
+        <br><br>
+        <input type="submit">
+    </form>
+
+</body>
+
+</html>
